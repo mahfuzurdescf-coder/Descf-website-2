@@ -1,0 +1,44 @@
+{
+  "site_name": "DESCF",
+  "tagline": "Delta Stewardship and Community Futures",
+  "default_meta_title": "DESCF",
+  "footer_blurb": "A static HTML website starter managed through GitHub and Decap CMS.",
+  "contact_email": "hello@descf.org",
+  "footer_note": "Built with GitHub, Netlify, and Decap CMS.",
+  "navigation": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "About",
+      "url": "/about/"
+    },
+    {
+      "label": "Current Work",
+      "url": "/current-work/"
+    },
+    {
+      "label": "Strategic Priorities",
+      "url": "/strategic-priorities/"
+    },
+    {
+      "label": "Evidence & Resources",
+      "url": "/resources/"
+    },
+    {
+      "label": "Partner With Us",
+      "url": "/partner-with-us/"
+    }
+  ],
+  "social_links": [
+    {
+      "label": "Facebook",
+      "url": "https://facebook.com/"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://linkedin.com/"
+    }
+  ]
+}

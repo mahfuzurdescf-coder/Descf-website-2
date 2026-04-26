@@ -1,0 +1,35 @@
+{
+  "eyebrow": "Current initiatives",
+  "title": "Current Work",
+  "intro": "Use this page to list active programmes, collaborations, and focal projects.",
+  "meta_title": "Current Work | DESCF",
+  "items": [
+    {
+      "title": "Snake Conservation and Community Awareness",
+      "slug": "snake-conservation",
+      "summary": "Sample entry for an active programme or initiative.",
+      "priority_area": "Biodiversity",
+      "featured": true,
+      "image": "/assets/images/placeholder-card.svg",
+      "body": "Add more detail about this initiative, partners, goals, and current status."
+    },
+    {
+      "title": "Walk with Nature by Sound",
+      "slug": "walk-with-nature-by-sound",
+      "summary": "Sample entry focused on public learning and sensory engagement.",
+      "priority_area": "Public Engagement",
+      "featured": true,
+      "image": "/assets/images/placeholder-card.svg",
+      "body": "Describe the programme, target participants, and planned outcomes."
+    },
+    {
+      "title": "Delta Dialogue Series",
+      "slug": "delta-dialogue-series",
+      "summary": "Sample entry for a dialogue, seminar, or convening series.",
+      "priority_area": "Knowledge Exchange",
+      "featured": true,
+      "image": "/assets/images/placeholder-card.svg",
+      "body": "Add details about the dialogue series, speakers, and themes."
+    }
+  ]
+}

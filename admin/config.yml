@@ -1,0 +1,165 @@
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: "https://www.descf.org"
+display_url: "https://www.descf.org"
+logo_url: "/assets/images/placeholder-card.svg"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Site Settings"
+        name: "site_settings"
+        file: "content/settings/site.json"
+        format: "json"
+        fields:
+          - { label: "Site Name", name: "site_name", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string", required: false }
+          - { label: "Default Meta Title", name: "default_meta_title", widget: "string", required: false }
+          - { label: "Footer Blurb", name: "footer_blurb", widget: "text", required: false }
+          - { label: "Contact Email", name: "contact_email", widget: "string", required: false }
+          - { label: "Footer Note", name: "footer_note", widget: "string", required: false }
+          - label: "Navigation"
+            name: "navigation"
+            widget: "list"
+            summary: "{{fields.label}} → {{fields.url}}"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+          - label: "Social Links"
+            name: "social_links"
+            widget: "list"
+            required: false
+            summary: "{{fields.label}} → {{fields.url}}"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "content/pages/home.json"
+        format: "json"
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Intro", name: "hero_intro", widget: "text" }
+          - { label: "Hero Image", name: "hero_image", widget: "image", required: false }
+          - { label: "Hero Image Alt", name: "hero_image_alt", widget: "string", required: false }
+          - { label: "Primary CTA Label", name: "primary_cta_label", widget: "string", required: false }
+          - { label: "Primary CTA URL", name: "primary_cta_url", widget: "string", required: false }
+          - { label: "Secondary CTA Label", name: "secondary_cta_label", widget: "string", required: false }
+          - { label: "Secondary CTA URL", name: "secondary_cta_url", widget: "string", required: false }
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            required: false
+            summary: "{{fields.value}} — {{fields.label}}"
+            fields:
+              - { label: "Value", name: "value", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+
+      - label: "About"
+        name: "about"
+        file: "content/pages/about.json"
+        format: "json"
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text", required: false }
+          - { label: "Meta Title", name: "meta_title", widget: "string", required: false }
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Image Alt", name: "image_alt", widget: "string", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Strategic Priorities"
+        name: "strategic_priorities"
+        file: "content/pages/strategic-priorities.json"
+        format: "json"
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text", required: false }
+          - { label: "Meta Title", name: "meta_title", widget: "string", required: false }
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Image Alt", name: "image_alt", widget: "string", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Partner With Us"
+        name: "partner_with_us"
+        file: "content/pages/partner-with-us.json"
+        format: "json"
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text", required: false }
+          - { label: "Meta Title", name: "meta_title", widget: "string", required: false }
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Image Alt", name: "image_alt", widget: "string", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "lists"
+    label: "Lists"
+    files:
+      - label: "Current Work"
+        name: "current_work"
+        file: "content/lists/current-work.json"
+        format: "json"
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text", required: false }
+          - { label: "Meta Title", name: "meta_title", widget: "string", required: false }
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Slug", name: "slug", widget: "string", hint: "Used only for internal reference in this starter." }
+              - { label: "Summary", name: "summary", widget: "text", required: false }
+              - { label: "Priority Area", name: "priority_area", widget: "string", required: false }
+              - { label: "Featured on Home", name: "featured", widget: "boolean", default: false, required: false }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Body", name: "body", widget: "markdown", required: false }
+
+      - label: "Resources"
+        name: "resources"
+        file: "content/lists/resources.json"
+        format: "json"
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text", required: false }
+          - { label: "Meta Title", name: "meta_title", widget: "string", required: false }
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Slug", name: "slug", widget: "string", hint: "Used only for internal reference in this starter." }
+              - label: "Type"
+                name: "type"
+                widget: "select"
+                options: ["Report", "Field Note", "Seminar", "Brief", "Publication", "Toolkit", "Link"]
+              - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, required: false }
+              - { label: "Summary", name: "summary", widget: "text", required: false }
+              - { label: "External URL", name: "external_url", widget: "string", required: false }
+              - { label: "File Upload", name: "file", widget: "file", required: false }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Body", name: "body", widget: "markdown", required: false }

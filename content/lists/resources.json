@@ -1,0 +1,41 @@
+{
+  "eyebrow": "Knowledge and evidence",
+  "title": "Evidence & Resources",
+  "intro": "Share reports, field notes, briefs, publications, and external links from this page.",
+  "meta_title": "Evidence & Resources | DESCF",
+  "items": [
+    {
+      "title": "Field Note: Wetland Observation",
+      "slug": "wetland-observation",
+      "type": "Field Note",
+      "date": "2026-01-15",
+      "summary": "Sample field note entry for testing the resources page and CMS workflow.",
+      "external_url": "",
+      "file": "",
+      "image": "/assets/images/placeholder-card.svg",
+      "body": "Use this body field for a short description or abstract."
+    },
+    {
+      "title": "Brief: Community Stewardship Model",
+      "slug": "community-stewardship-model",
+      "type": "Brief",
+      "date": "2026-02-10",
+      "summary": "Sample policy or practice brief.",
+      "external_url": "",
+      "file": "",
+      "image": "/assets/images/placeholder-card.svg",
+      "body": "Summarise the key takeaways for this brief."
+    },
+    {
+      "title": "Seminar Recording",
+      "slug": "seminar-recording",
+      "type": "Seminar",
+      "date": "2026-03-05",
+      "summary": "Sample external resource link.",
+      "external_url": "https://example.org/",
+      "file": "",
+      "image": "/assets/images/placeholder-card.svg",
+      "body": "Add context, speakers, and why this resource matters."
+    }
+  ]
+}
