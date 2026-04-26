@@ -1,9 +1,0 @@
-<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">DESCF placeholder logo</title>
-  <desc id="desc">Temporary circular placeholder mark for the DESCF Phase 1 demo.</desc>
-  <rect width="240" height="240" rx="120" fill="#092116"/>
-  <circle cx="120" cy="120" r="88" stroke="#C8A46B" stroke-width="8"/>
-  <path d="M75 131C90 94 123 79 166 87C143 101 135 128 143 166C111 164 86 154 75 131Z" fill="#C8A46B" opacity="0.88"/>
-  <path d="M79 130C100 121 122 123 145 137" stroke="#092116" stroke-width="8" stroke-linecap="round"/>
-  <text x="120" y="205" text-anchor="middle" fill="#F7F1E6" font-family="Arial, sans-serif" font-size="28" font-weight="700">DESCF</text>
-</svg>
