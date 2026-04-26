@@ -1,25 +1,25 @@
 {
-  "eyebrow": "Community, ecology, and stewardship",
-  "hero_title": "Supporting delta stewardship through research, dialogue, and collaboration",
-  "hero_intro": "This starter keeps your site fast and simple while making updates easy through a browser-based CMS connected to GitHub.",
+  "eyebrow": "Wildlife conservation in Bangladesh",
+  "hero_title": "Protecting Wildlife Through Coexistence, Conservation, and Community Action in Bangladesh",
+  "hero_intro": "Deep Ecology and Snake Conservation Foundation (DESCF) is a wildlife conservation organisation based in Bangladesh. Its current work focuses on herpetofauna conservation, public awareness, and human-wildlife coexistence.",
   "hero_image": "/assets/images/placeholder-hero.svg",
-  "hero_image_alt": "Illustration placeholder for DESCF",
-  "primary_cta_label": "Explore current work",
+  "hero_image_alt": "DESCF hero placeholder image",
+  "primary_cta_label": "View Current Work",
   "primary_cta_url": "/current-work/",
-  "secondary_cta_label": "Partner with us",
-  "secondary_cta_url": "/partner-with-us/",
+  "secondary_cta_label": "Explore Strategic Priorities",
+  "secondary_cta_url": "/strategic-priorities/",
   "stats": [
     {
-      "value": "3+",
-      "label": "Priority areas"
+      "value": "1000+",
+      "label": "Rescue Cases"
     },
     {
-      "value": "100%",
-      "label": "Git-based version control"
+      "value": "200+",
+      "label": "Awareness Sessions"
     },
     {
-      "value": "24/7",
-      "label": "Easy content editing"
+      "value": "1300+",
+      "label": "Students Reached"
     }
   ]
 }

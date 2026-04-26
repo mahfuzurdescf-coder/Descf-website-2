@@ -1,63 +1,16 @@
 # DESCF Static HTML + Decap CMS Starter
 
-Static HTML website starter for DESCF with:
-- GitHub repository workflow
-- Netlify deployment
-- Decap CMS admin panel
-- JSON content files editable from `/admin`
+Customized first version for DESCF based on the current public site structure.
 
-## Stack
-- HTML, CSS, vanilla JavaScript
-- Decap CMS
-- Netlify
-- GitHub
+## Included pages
+- Home
+- About
+- Current Work
+- Strategic Priorities
+- Evidence & Resources
+- Partner With Us
 
-## Project structure
-
-```text
-.
-├── index.html
-├── about/index.html
-├── current-work/index.html
-├── strategic-priorities/index.html
-├── resources/index.html
-├── partner-with-us/index.html
-├── admin/
-├── assets/
-├── content/
-└── netlify.toml
-```
-
-## Local development
-
-Serve the project with any static web server.
-
-```bash
-python -m http.server 8000
-```
-
-Open:
-- http://localhost:8000
-- http://localhost:8000/admin
-
-For local CMS editing with Decap proxy server:
-
-```bash
-npx decap-server
-```
-
-## Netlify setup
-
-1. Push this project to a GitHub repository.
-2. Import the repository into Netlify.
-3. Publish directory: `.`
-4. Build command: leave empty.
-5. Enable Identity and Git Gateway in Netlify.
-6. Invite admin users.
-7. Open `/admin` and log in.
-
-## Content files
-
+## Included editable content files
 - `content/settings/site.json`
 - `content/pages/home.json`
 - `content/pages/about.json`
@@ -66,8 +19,32 @@ npx decap-server
 - `content/lists/current-work.json`
 - `content/lists/resources.json`
 
-## Notes
+## What is already customized
+- Main navigation
+- Homepage hero copy
+- DESCF footprint stats
+- About page structure
+- Current Work items
+- Strategic Priorities copy
+- Evidence & Resources items
+- Partner page copy
 
-- The site loads content from JSON files with `fetch`, so do not test with `file://`.
-- `site_url` in `admin/config.yml` should be updated to your real production domain.
-- Replace placeholder copy and images with your real DESCF content.
+## What still needs manual replacement
+- Real DESCF images
+- Contact email and social links
+- Governance / reports / donate subpages
+- Domain verification and Netlify CMS login setup
+
+## Local development
+```bash
+python -m http.server 8000
+```
+
+Open:
+- `http://localhost:8000`
+- `http://localhost:8000/admin`
+
+For local CMS editing:
+```bash
+npx decap-server
+```
