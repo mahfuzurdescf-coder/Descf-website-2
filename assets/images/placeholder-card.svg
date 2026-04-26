@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Placeholder card image">
-  <rect width="800" height="450" fill="#eef3ec"/>
-  <path d="M0 315C96 288 165 252 268 266C352 277 446 332 545 334C642 336 715 305 800 248V450H0Z" fill="#c8ddc1"/>
-  <path d="M0 354C107 319 189 318 286 338C372 356 490 400 600 391C684 384 743 358 800 326V450H0Z" fill="#7ea789"/>
-  <text x="42" y="60" fill="#2b5336" font-size="28" font-family="Arial, sans-serif" font-weight="700">Upload image from CMS</text>
-</svg>

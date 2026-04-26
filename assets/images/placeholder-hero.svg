@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Placeholder hero image">
-  <rect width="1200" height="800" fill="#e7efe4"/>
-  <circle cx="180" cy="160" r="80" fill="#c8ddc1"/>
-  <path d="M0 560C120 520 220 500 340 520C500 548 612 662 760 666C888 669 1001 612 1200 500V800H0Z" fill="#9ec2a4"/>
-  <path d="M0 610C160 545 308 560 468 608C645 661 775 724 945 677C1048 648 1125 602 1200 565V800H0Z" fill="#6d9a78"/>
-  <text x="72" y="92" fill="#20442d" font-size="48" font-family="Arial, sans-serif" font-weight="700">DESCF</text>
-  <text x="72" y="148" fill="#365b40" font-size="28" font-family="Arial, sans-serif">Replace with your project image</text>
-</svg>
