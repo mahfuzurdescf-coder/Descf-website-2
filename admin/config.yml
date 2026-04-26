@@ -1,7 +1,7 @@
 
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/DESCF-WEBSITE-2
+  repo: mahfuzurdescf-coder/Descf-website-2
   branch: main
 
 media_folder: "assets/uploads"
